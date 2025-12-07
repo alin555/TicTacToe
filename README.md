@@ -32,5 +32,13 @@ node client.js ws://localhost:3001
 node client.js ws://localhost:3002
 
 
-Play! Moves are typed as row,col (both 0-indexed).
+3. Play! Moves are typed as row,col (both 0-indexed).
+ 
+ ## AI Tools Used
+- chatGPT
+
+I requested the full initial code from the chatGPT and adapted it to my needs, places I touched:
+The game object was missing 'playersConnected' property and was not able to manage the game array correctly - I added in the relevant places.
+Player disconnection caused problems - I fixed it so that disconnection is supported and the game is saved.
+The code did not support multiple game rooms, but only 1 at a time - I fixed it and added support, you can play in multiple rooms at the same time.
 
